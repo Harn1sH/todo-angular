@@ -1,0 +1,7 @@
+<div class="task">
+    <div class="checked">
+        <input type="checkbox" [checked]="todosProp.isCompleted" (click)="handleStatus(todosProp,(!todosProp.isCompleted))">
+    </div>
+    <div class="todo">{{todosProp.task}}</div>
+    <div class="wrong"></div>
+</div>

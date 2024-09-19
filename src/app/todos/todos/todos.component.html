@@ -1,0 +1,6 @@
+<div class="container d-flex flex-column justify-content-center align-items-center my-5">
+    <input type="text" placeholder="todo" class="form-control" [(ngModel)]="value" (keyup.enter)="handleEnter()" />
+    <div *ngIf="isFooterVisible | async" class="display-container">
+        <app-body></app-body>
+    </div>
+</div>

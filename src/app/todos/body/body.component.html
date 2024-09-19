@@ -1,0 +1,7 @@
+<div *ngFor="let task of visibleTodos$ | async as tasks">
+    <app-tasks [todos]="task"></app-tasks>
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>

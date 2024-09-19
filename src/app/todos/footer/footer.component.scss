@@ -1,0 +1,48 @@
+ *{
+    border:0;
+    margin: 0;
+
+ }
+ 
+ .font-size{
+    font-size: 15px;
+ }
+
+ .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+
+    .btn-transparent{
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+        margin-inline: 5px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+        .selected {
+            color: red;
+        }
+
+    
+
+    .btn-transparent:hover{
+        color: purple;
+    }
+
+    .btn-transparent:visited{
+        color: black;
+    }
+
+    .btn-transparent:active{
+        color: red;
+    }
+
+    .button-container{
+        display: flex;
+        justify-content: space-between;
+    }
+ }

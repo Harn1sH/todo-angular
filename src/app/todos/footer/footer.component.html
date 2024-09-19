@@ -1,0 +1,13 @@
+<div class="footer-container">
+    <div>
+        <div class=" font-size">{{itemsLeft$ | async}} items left</div>
+    </div>
+
+    <div class="button-container">
+        <a [ngClass]="(selectedOption | async) == (filterOption.ALL) ?'btn-transparent font-size selected':'btn-transparent font-size'" (click)="handleFilter('all')" >All</a>
+        <a [ngClass]="(selectedOption | async) == (filterOption.ACTIVE) ?'btn-transparent font-size selected':'btn-transparent font-size'" (click)="handleFilter('active')">Active</a>
+        <a [ngClass]="(selectedOption | async) == (filterOption.COMPLETED) ?'btn-transparent font-size selected':'btn-transparent font-size'" (click)="handleFilter('completed')">Completed</a>
+    </div>
+
+    <div><button class="btn-transparent font-size" (click)="handleClear()">clear completed</button></div>
+</div>  
